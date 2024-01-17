@@ -301,9 +301,10 @@ a {
 /* Filter */
 .button {
   display: inline-block;
-  width: auto;
+  min-width: auto;
 
   padding: 6px 22px;
+  border: 1px solid transparent;
 
   color: var(--primare-text-color);
   background-color: var(--button-color);
@@ -314,14 +315,18 @@ a {
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .button.current {
   display: inline-block;
-  width: auto;
+  min-width: auto;
 
   padding: 6px 25px;
+  border: 1px solid transparent;
+
   color: var(--main-white-color);
   background-color: var(--accent-color);
+  text-align: center;
 }
 /* works */
 .item {
