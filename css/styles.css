@@ -22,6 +22,13 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: solid tomato;
+}
 a {
   text-decoration: none;
 }
@@ -46,6 +53,8 @@ a {
   color: var(--accent-color);
 }
 .header-nav .link {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primare-text-color);
 
   font-size: 14px;
@@ -90,6 +99,8 @@ a {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .header-nav .link.current {
   color: var(--accent-color);
@@ -98,11 +109,11 @@ a {
 /* Effective solutions  Hero*/
 .section-hero {
   background-color: #2f303a;
-  width: 1600px;
 }
 .section-hero-title {
   color: var(--main-white-color);
-
+  margin-top: 0;
+  margin-bottom: 30;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -126,6 +137,9 @@ a {
 .button-hero {
   background-color: var(--accent-color);
   color: var(--main-white-color);
+  min-width: 216px;
+  min-height: 50px;
+  border: 1p solid var(--accent-color);
 
   font-size: 16px;
   font-weight: 700;
@@ -133,9 +147,9 @@ a {
   letter-spacing: 0.06em;
   text-align: center;
 
-  margin-right: 692px;
-  margin-left: 692px;
-
+  margin-right: 492px;
+  margin-left: 492px;
+  border-radius: 4px;
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -145,8 +159,14 @@ a {
 }
 
 /* Features */
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .section-title {
+  display: inline-block;
   color: var(--primare-text-color);
+  margin-bottom: 10px;
 
   font-size: 14px;
   font-weight: 700;
@@ -155,6 +175,8 @@ a {
 }
 
 .text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--secondare-text-color);
 
   font-size: 14px;
@@ -164,19 +186,29 @@ a {
 }
 /* Our Works */
 .main-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primare-text-color);
 
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 /* Our Team*/
 .section-team {
   background-color: var(--background-color);
-  width: 1600px;
+}
+.photo {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .main-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primare-text-color);
 
   font-size: 36px;
@@ -186,6 +218,9 @@ a {
   text-align: center;
 }
 .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.17;
@@ -194,6 +229,8 @@ a {
 }
 
 .text-team {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--secondare-text-color);
 
   font-size: 16px;
@@ -263,8 +300,15 @@ a {
 }
 /* Filter */
 .button {
+  display: inline-block;
+  width: auto;
+
+  padding: 6px 22px;
+
   color: var(--primare-text-color);
   background-color: var(--button-color);
+
+  border-radius: 4px;
 
   font-size: 16px;
   font-weight: 500;
@@ -272,11 +316,19 @@ a {
   letter-spacing: 0.03em;
 }
 .button.current {
+  display: inline-block;
+  width: auto;
+
+  padding: 6px 25px;
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
 /* works */
+.item {
+  margin-bottom: 20px;
+}
 .name {
+  margin-bottom: 4px;
   color: var(--primare-text-color);
   font-size: 18px;
   font-weight: 700;
@@ -284,6 +336,9 @@ a {
   letter-spacing: 0.06em;
 }
 .text-portfolio {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--secondare-text-color);
   font-size: 16px;
   font-weight: 400;
