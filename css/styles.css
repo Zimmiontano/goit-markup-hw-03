@@ -38,19 +38,25 @@ a {
 .header-main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-logo:hover,
 .header-logo:focus {
   color: var(--accent-color);
 }
 .header-logo {
+  margin-right: 93px;
+
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
-  margin-right: 93px;
 
   text-decoration: none;
 }
@@ -58,8 +64,7 @@ a {
   color: #000000;
 }
 .header-logo {
-  display: block;
-
+  display: flex;
   padding-bottom: 25px;
 
   color: var(--accent-color);
@@ -98,9 +103,9 @@ a {
 .auth-nav {
   display: flex;
 }
-/* .auth-nav .item + .item {
+.auth-nav .item + .item {
   margin-left: 30px;
-} */
+}
 .auth-nav .email {
   display: flex;
   padding-top: 32px;
