@@ -23,6 +23,8 @@ body {
   font-weight: 400;
 }
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
@@ -33,6 +35,10 @@ a {
   text-decoration: none;
 }
 /* Header nav*/
+.header-main {
+  display: flex;
+  align-items: center;
+}
 .header-logo:hover,
 .header-logo:focus {
   color: var(--accent-color);
@@ -44,15 +50,32 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
 
+  margin-right: 93px;
+
   text-decoration: none;
 }
 .logo-style-h {
   color: #000000;
 }
 .header-logo {
+  display: block;
+
+  padding-bottom: 25px;
+
   color: var(--accent-color);
 }
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primare-text-color);
@@ -72,7 +95,17 @@ a {
 .auth-nav .email:focus {
   color: var(--accent-color);
 }
+.auth-nav {
+  display: flex;
+}
+/* .auth-nav .item + .item {
+  margin-left: 30px;
+} */
 .auth-nav .email {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondare-text-color);
 
   font-size: 14px;
@@ -87,6 +120,10 @@ a {
   color: var(--accent-color);
 }
 .auth-nav .phone {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondare-text-color);
 
   font-size: 14px;
