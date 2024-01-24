@@ -23,26 +23,26 @@
   <body>
     <!-- Заголовок -->
     <header>
-      <div class="container">
-        <a href="./index.html" class="header-logo">
-          Web<span class="logo-style-h">Studio</span>
-        </a>
-        <nav>
+      <div class="container header-main">
+        <nav class="navigation">
+          <a href="./index.html" class="header-logo">
+            Web<span class="logo-style-h">Studio</span>
+          </a>
           <ul class="header-nav list">
-            <li><a href="./index.html" class="link">Студія</a></li>
-            <li>
+            <li class="item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="item">
               <a href="./portfolio.html" class="link current">Портфоліо</a>
             </li>
-            <li><a href="#" class="link">Контакти</a></li>
+            <li class="item"><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="email"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+3809611111111" class="phone">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -53,15 +53,15 @@
       <div class="container">
         <section>
           <ul class="portfolio-nav list">
-            <li><button class="button current">Усі</button></li>
-            <li><button class="button">Веб-сайти</button></li>
-            <li><button class="button">Додатки</button></li>
-            <li><button class="button">Дизайн</button></li>
-            <li><button class="button">Маркетинг</button></li>
+            <li class="item"><button class="button current">Усі</button></li>
+            <li class="item"><button class="button">Веб-сайти</button></li>
+            <li class="item"><button class="button">Додатки</button></li>
+            <li class="item"><button class="button">Дизайн</button></li>
+            <li class="item"><button class="button">Маркетинг</button></li>
           </ul>
           <!-- Портфоліо -->
           <ul class="works list">
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/Technocrack.jpg"
@@ -73,7 +73,7 @@
                 <p class="text-portfolio">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/Poster.jpg"
@@ -85,7 +85,7 @@
                 <p class="text-portfolio">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/Rectoran.jpg"
@@ -97,7 +97,7 @@
                 <p class="text-portfolio">Додаток</p>
               </a>
             </li>
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/Prime.jpg"
@@ -109,7 +109,7 @@
                 <p class="text-portfolio">Додаток</p>
               </a>
             </li>
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/Boxes.jpg"
@@ -121,7 +121,7 @@
                 <p class="text-portfolio">Додаток</p>
               </a>
             </li>
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/Inspiration_has_no_Borders.jpg"
@@ -133,7 +133,7 @@
                 <p class="text-portfolio">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/Limited_edition.jpg"
@@ -145,7 +145,7 @@
                 <p class="text-portfolio">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/LAB.jpg"
@@ -157,7 +157,7 @@
                 <p class="text-portfolio">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="flex">
               <a href="" class="item">
                 <img
                   src="./image/Growing_Business.jpg"
@@ -174,8 +174,9 @@
     </main>
 
     <!-- Підвал -->
-    <div class="container">
+    
       <footer class="footer">
+        <div class="container">
         <a href="./index.html" class="footer-logo">
           Web<span class="logo-style-f">Studio</span>
         </a>
