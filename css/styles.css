@@ -236,6 +236,7 @@ a {
   letter-spacing: 0.03em;
 }
 /* Our Works */
+
 .main-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -347,18 +348,28 @@ a {
 
   text-decoration: none;
 }
+
 /* Button */
 .button {
   color: var(--primare-text-color);
   background-color: var(--button-color);
 }
 /*  Portfolio */
+
 .portfolio-nav .button:hover,
 .portfolio-nav .button:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
 /* Filter */
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.item + .item {
+  margin-left: 8px;
+}
 .button {
   display: inline-block;
   min-width: auto;
@@ -389,6 +400,14 @@ a {
   text-align: center;
 }
 /* works */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex :nth-last-child(3n),
+.flex :nth-last-child(-n + 3) {
+  margin-right: 30px;
+}
 .item {
   margin-bottom: 20px;
 }
