@@ -31,6 +31,10 @@ body {
 
   outline: solid tomato;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 a {
   text-decoration: none;
 }
@@ -150,13 +154,19 @@ a {
 
 /* Effective solutions  Hero*/
 .background {
-  background-color: #2f303a;
+  background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), transparent),
+    url(/image/background-hero.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .section-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-hero-title {
   color: var(--main-white-color);
@@ -201,19 +211,25 @@ a {
 }
 
 /* Features */
+.title-features {
+  display: none;
+}
 .features {
   display: flex;
 
   justify-content: space-between;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.features .item:not(:last-child) {
+.features .item:not(:last-child),
+icon:not(:last-child) {
   margin-right: 30px;
 }
-.features .title {
-  display: none;
-  margin-top: 0;
-  margin-bottom: 0;
+.icon {
+  margin-bottom: 30px;
 }
+
 .section-title {
   display: inline-block;
   color: var(--primare-text-color);
@@ -255,6 +271,17 @@ a {
   justify-content: space-between;
 }
 /* Our Team*/
+.sosial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sosial-icon {
+  margin-top: 16px;
+}
+.sosial-icon + .sosial-icon {
+  margin-left: 10px;
+}
 .section-team {
   background-color: var(--background-color);
 }
@@ -301,9 +328,20 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
+/* Clients */
+.clients {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Footer */
 .footer {
   background-color: #2f303a;
+}
+.footer-main {
+  display: flex;
+  flex-direction: column;
 }
 .footer-logo:hover,
 .footer-logo:focus {
@@ -311,6 +349,9 @@ a {
 }
 
 .footer-logo {
+  margin-top: 60px;
+  margin-bottom: 20px;
+
   font-family: Raleway, sans-serif;
   color: var(--accent-color);
   font-size: 26px;
@@ -325,6 +366,7 @@ a {
   font-family: Raleway, sans-serif;
 }
 .address {
+  margin-bottom: 60px;
   color: var(--main-white-color);
   font-style: normal;
   font-size: 14px;
